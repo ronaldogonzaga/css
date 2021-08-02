@@ -17,8 +17,7 @@ body {
     justify-content: center;
 }
 
-/*Container que vai conter todos os itens*/
-.instagram-wrapper { 
+.instagram-wrapper {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -26,57 +25,55 @@ body {
     height: 100vh;
 }
 
-/*reduz o tamanho da imagem celular*/
-.instagram-phone { 
+.instagram-phone {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
 }
 
-.instagram-phone img {
+.instagram-phone img { /*Tamanho da imagem esquerda do celular*/
     height: 50rem;
 }
 
 .instagram-continue {
     display: flex;
-    align-items: center; 
-    justify-content: space-around; 
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column; /*converte em coluna*/
     width: 50%;
     min-height: 34rem;
 }
 
-.group { /* container de cima*/
+.group { /*grupo do container de baixo*/
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: #ffffffff;
     width: 100%;
     padding: 1.3rem 0;
     border: 1px solid lightgray;
 }
 
-.group:nth-child(1) { /* propriedades da caixa superior onde fica a foto do login*/
-    min-height: 19rem;
+.app-download:nth-child(1) {
+    background-image: url('./img/apple-button.png');
 }
 
-.instagram-logo {
-    height: 6rem;
+.app-download:nth-child(2) {
+    background-image: url('./img/googleplay-button.png');
 }
 
-/*Foto do perfil*/
+.profile-logo{
+    height: 3rem;
+}
+
 .profile-photo {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     overflow: hidden;
-}
-
-.profile-photo img {
-    height: 6rem;
 }
 
 .instagram-login {
@@ -86,7 +83,7 @@ body {
     border-radius: 4px;
 }
 
-.instagram-logout {
+.instagrm-logout {
     color: #0095f6;
     margin-top: 1rem;
 }
@@ -122,27 +119,19 @@ body {
     background-size: cover;
 }
 
-.app-download:nth-child(1) { /* child 1 - referente ao primeiro download */
-    background-image: url('./img/apple-button.png');
-}
-
-.app-download:nth-child(2) { /* child 2 - o segundo download*/
-    background-image: url('./img/googleplay-button.png');
-}
-
 /* media queryes 
-   vai tratar como uma p√°gina responsiva em dimensionamentos
+   vai tratar como uma p·gina responsiva em dimensionamentos
 */
-@media (max-width: 1024px) {
-    .instagram-wrapper {
+@media (max-widh: 1024px) {
+    .instagram-wrapper{
         width: 90%;
     }
 }
 
-@media (max-width: 650px) {
-    body {
+@media (max-widh: 650px) {
+    body{
         background-color: #ffffff;
-    }
+    };
 
     .instagram-wrapper {
         width: 90%;
@@ -155,7 +144,7 @@ body {
     .instagram-continue {
         width: 100%;
     }
-    
+
     .group {
         border: 1px solid transparent;
     }
