@@ -1,2 +1,3 @@
-# css
-Trabalho para DIO
+# CSS
+### Objetivo
+Implementação de atividades em CSS para treinamento na plataforma DIO
